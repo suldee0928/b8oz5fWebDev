@@ -1,0 +1,31 @@
+
+body.accessible {
+    font-size: 1.25em; /* Increase the font size */
+    background-color: #000; /* High contrast background */
+    color: #fff; /* High contrast text */
+}
+
+header.accessible,
+nav.accessible,
+footer.accessible {
+    background-color: #000; /* High contrast background for header, nav, and footer */
+    color: #fff; /* High contrast text */
+}
+
+a.accessible {
+    color: #ff0; /* High contrast links */
+}
+
+button.accessible {
+    font-size: 1.25em; /* Increase button font size */
+    background-color: #ff0; /* High contrast button background */
+    color: #000; /* High contrast button text */
+}
+
+.accessible video {
+    border: 2px solid #fff; /* High contrast video border */
+}
+
+img.accessible {
+    filter: invert(100%); /* Invert colors for images */
+}
