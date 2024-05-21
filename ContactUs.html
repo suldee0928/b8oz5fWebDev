@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEKKEN 8 - Contact Us!</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/contactus.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <div class="topnav">
+        <div class="logo">
+            <img src="images/tekken8_logo.jpg.png" alt="Tekken 8 Logo">
+            <button id="toggleAccessibility" class="btn btn-secondary btn-lg">Toggle Accessibility</button>
+          </div>
+        <nav class="menu">
+            <a href="Home.html">Home</a>
+            <a href="About.html">About TEKKEN</a>
+            <a href="Characters.html">Characters</a>
+            <a href="ContactUs.html" class="active">Contact Us</a>
+            <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='https://en.bandainamcoent.eu/tekken/tekken-8/shop-now'">PURCHASE NOW</button>
+
+        </nav>
+    </div>
+
+    <div class="image-container">
+        <div class="image">
+            <img src="images/JIN_new.png" alt="Image 1">
+        </div>
+
+        <div class="form-wrapper">
+            <div class="form-container">
+                <h2>Do you have any inquiries about TEKKEN? Fill out the form below.</h2>
+                <form id="myForm" action="mailto:your-email@example.com" method="post" enctype="text/plain" onsubmit="return thanks()">
+                    <input type="text" class="form-input" placeholder="Name" name="name">
+                    <input type="text" class="form-input" placeholder="Username" name="username">
+                    <input type="email" class="form-input" placeholder="E-mail" name="email">
+                    <input type="text" class="form-input" placeholder="Topic" name="Question">
+                    <textarea class="form-textarea" placeholder="Question" name="Text"></textarea>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="subscribe" id="subscribeCheck">
+                        <label class="form-check-label" for="subscribeCheck">Subscribe to newsletter</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="contactMethod" id="radioEmail" value="email">
+                        <label class="form-check-label" for="radioEmail">Contact by Email</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="contactMethod" id="radioPhone" value="phone">
+                        <label class="form-check-label" for="radioPhone">Contact by Phone</label>
+                    </div>
+
+                    <button type="reset" class="form-button">Reset</button>
+                    <button type="submit" class="form-button">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="images/Kazuya-Mishima_new.png" alt="Image 2">
+        </div>
+    </div>
+
+    <script>
+        function thanks() {
+            let name = document.forms["myForm"]["name"].value;
+            let username = document.forms["myForm"]["username"].value;
+            let email = document.forms["myForm"]["email"].value;
+            let Question = document.forms["myForm"]["Question"].value;
+            let Text = document.forms["myForm"]["Text"].value;
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+            if (name == "" || username == "") {
+                alert("Please insert either a username or a name!");
+                return false;
+            }
+            if (!mailformat.test(email)) {
+                alert("Invalid E-mail!");
+                return false;
+            }
+            if (Question == "") {
+                alert("Please insert a topic");
+                return false;
+            }
+            if (Text == "") {
+                alert("Please insert your question");
+                return false;
+            }
+            alert("Thank You!");
+            return true;
+        }
+   
+  function myFunction() {
+      var transcript = document.getElementById("transcript");
+      if (transcript.style.display === "none") {
+          transcript.style.display = "block";
+      } else {
+          transcript.style.display = "none";
+      }
+  }
+
+  document.getElementById('toggleAccessibility').addEventListener('click', function () {
+      document.body.classList.toggle('accessible');
+      document.querySelector('header').classList.toggle('accessible');
+      document.querySelector('nav').classList.toggle('accessible');
+      document.querySelector('footer').classList.toggle('accessible');
+
+      let elements = document.querySelectorAll('a, button, video');
+      elements.forEach(element => {
+          element.classList.toggle('accessible');
+      });
+  });
+
+    </script>
+</body>
+<footer>TEKKEN 8, Bandai-Namco all rights recieved</footer>
+
+</html>
