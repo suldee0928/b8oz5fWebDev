@@ -1,3 +1,8 @@
+/* Base styles */
+body {
+    background-image: url('../images/spring.jpg');
+}
+
 .form-container {
     max-width: 800px;
     padding: 20px;
@@ -7,8 +12,12 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    background-size: cover; 
+    background-position: center; 
+    color: #fff;
 }
 
+/* Form input styles */
 .form-input {
     width: calc(100% - 20px);
     padding: 10px;
@@ -27,6 +36,7 @@
     outline: none;
 }
 
+/* Form textarea styles */
 .form-textarea {
     width: calc(100% - 20px);
     padding: 10px;
@@ -47,6 +57,7 @@
     outline: none;
 }
 
+/* Form button styles */
 .form-button {
     padding: 15px 30px;
     border: none;
@@ -62,12 +73,13 @@
     background-color: #e74c3c;
 }
 
+/* Heading styles */
 h2 {
     text-align: center;
     color: #e74c3c;
 }
 
-
+/* Image container styles */
 .image-container {
     display: flex;
     justify-content: space-between;
@@ -82,6 +94,7 @@ h2 {
     border-radius: 1px;
 }
 
+/* Form wrapper styles */
 .form-wrapper {
     display: flex;
     justify-content: center;
@@ -90,6 +103,7 @@ h2 {
     width: 100%;
 }
 
+/* Form check label styles */
 .form-check-label {
     color: white;
 }

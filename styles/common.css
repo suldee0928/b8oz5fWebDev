@@ -7,7 +7,19 @@ body {
     background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 40%, rgba(2,0,36,1) 47%, rgba(18,54,75,1) 100%, rgba(27,0,255,1) 100%);
     color: #fff;
+    
 }
+a {
+    color: #fff !important; 
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e74c3c !important;
+    text-decoration: underline; 
+}
+
 
 .topnav {
     width: 100vw; 

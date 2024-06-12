@@ -1,17 +1,24 @@
-
 .container {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 150px; 
 }
-
+h1 {color: #e74c3c;
+    text-align: center;}
 .content {
     max-width: 600px;
     text-align: center;
     padding: 0 20px;
     color: #fff;
+    margin-top: 20px; 
+}
+.welcome-text {
+    font-size: larger;
+    font-weight: bold;
+    color: #e74c3c; 
+    margin-top: 20px; 
 }
 
 .content p {
@@ -78,7 +85,6 @@
 .script-button button:hover {
     background-color: #45a049;
 }
-
 
 #transcript {
     text-align: center;

@@ -1,0 +1,8 @@
+1. Added Background image at contactus.css background-image: url('../images/spring.jpg');
+2. Added Thumbnails (see About.html)
+3. Fixed All the web pages are regarded as valid by the http://validator.w3.org/ site index.html
+4. Removed inline css.
+5. Added links on index.html, about.html and characters.html
+6. Used The HTML5 pages should give an example for the use of all of the following tags: <header><nav><section><article><aside><footer><figure><video> About.html
+7. Added alt tag explanation for most of the pictures
+8. About.html uses HTML5 elements
